@@ -1,42 +1,9 @@
-[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
-
-[![Blog](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=Blog)](https://blog.linuxserver.io "all the things you can do with our containers including How-To guides, opinions and much more!")
-[![Discord](https://img.shields.io/discord/354974912613449730.svg?style=flat-square&color=E68523&label=Discord&logo=discord&logoColor=FFFFFF)](https://discord.gg/YWrKVTn "realtime support / chat with the community and the team.")
-[![Discourse](https://img.shields.io/discourse/https/discourse.linuxserver.io/topics.svg?style=flat-square&color=E68523&logo=discourse&logoColor=FFFFFF)](https://discourse.linuxserver.io "post on our community forum.")
-[![Fleet](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=Fleet)](https://fleet.linuxserver.io "an online web interface which displays all of our maintained images.")
-[![GitHub](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=GitHub&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver "view the source for all of our repositories.")
-[![Podcast](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=Podcast)](https://anchor.fm/linuxserverio "on hiatus. Coming back soon (late 2018).")
-[![Open Collective](https://img.shields.io/opencollective/all/linuxserver.svg?style=flat-square&color=E68523&label=Supporters&logo=open%20collective&logoColor=FFFFFF)](https://opencollective.com/linuxserver "please consider helping us by either donating or contributing to our budget")
-
-The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring :-
-
- * regular and timely application updates
- * easy user mappings (PGID, PUID)
- * custom base image with s6 overlay
- * weekly base OS updates with common layers across the entire LinuxServer.io ecosystem to minimise space usage, down time and bandwidth
- * regular security updates
-
-Find us at:
-* [Blog](https://blog.linuxserver.io) - all the things you can do with our containers including How-To guides, opinions and much more!
-* [Discord](https://discord.gg/YWrKVTn) - realtime support / chat with the community and the team.
-* [Discourse](https://discourse.linuxserver.io) - post on our community forum.
-* [Fleet](https://fleet.linuxserver.io) - an online web interface which displays all of our maintained images.
-* [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
-* [Podcast](https://anchor.fm/linuxserverio) - on hiatus. Coming back soon (late 2018).
-* [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
+# This image is based on the Airsonic image from The LinuxServer.io team
 
 # [linuxserver/airsonic](https://github.com/linuxserver/docker-airsonic)
 
-[![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-airsonic.svg?style=flat-square&color=E68523&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver/docker-airsonic)
-[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-airsonic.svg?style=flat-square&color=E68523&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver/docker-airsonic/releases)
-[![GitHub Package Repository](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=GitHub%20Package&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver/docker-airsonic/packages)
-[![GitLab Container Registry](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=GitLab%20Registry&logo=gitlab&logoColor=FFFFFF)](https://gitlab.com/Linuxserver.io/docker-airsonic/container_registry)
-[![Quay.io](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=Quay.io)](https://quay.io/repository/linuxserver.io/airsonic)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/linuxserver/airsonic.svg?style=flat-square&color=E68523)](https://microbadger.com/images/linuxserver/airsonic "Get your own version badge on microbadger.com")
-[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/airsonic.svg?style=flat-square&color=E68523&label=pulls&logo=docker&logoColor=FFFFFF)](https://hub.docker.com/r/linuxserver/airsonic)
-[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/airsonic.svg?style=flat-square&color=E68523&label=stars&logo=docker&logoColor=FFFFFF)](https://hub.docker.com/r/linuxserver/airsonic)
-[![Build Status](https://ci.linuxserver.io/view/all/job/Docker-Pipeline-Builders/job/docker-airsonic/job/master/badge/icon?style=flat-square)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-airsonic/job/master/)
-[![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/airsonic/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/airsonic/latest/index.html)
+# **There is only one small adaptation done to use the old database from Airsonic on my NAS.**
+
 
 [Airsonic](https://github.com/airsonic/airsonic) is a free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.
 
@@ -44,17 +11,14 @@ Find us at:
 
 ## Supported Architectures
 
-Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/).
-
-Simply pulling `linuxserver/airsonic` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+Simply pulling `marduer/airsonic` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
 
 The architectures supported by this image are:
 
 | Architecture | Tag |
 | :----: | --- |
-| x86-64 | amd64-latest |
-| arm64 | arm64v8-latest |
-| armhf | arm32v7-latest |
+| x86-64 | latest |
+
 
 
 ## Usage
@@ -77,8 +41,9 @@ docker create \
   -v </path/to/playlists>:/playlists \
   -v </path/to/podcasts>:/podcasts \
   -v </path/to/other media>:/media `#optional` \
+  -v </path/to/music folder>:/srv/dev-disk-by-label-SWRaid01/MUSIK `#optional` \
   --restart unless-stopped \
-  linuxserver/airsonic
+  marduer/airsonic
 ```
 
 
@@ -91,7 +56,7 @@ Compatible with docker-compose v2 schemas.
 version: "2"
 services:
   airsonic:
-    image: linuxserver/airsonic
+    image: marduer/airsonic
     container_name: airsonic
     environment:
       - PUID=1000
@@ -105,6 +70,7 @@ services:
       - </path/to/playlists>:/playlists
       - </path/to/podcasts>:/podcasts
       - </path/to/other media>:/media #optional
+      - </path/to/music folder>:/srv/dev-disk-by-label-SWRaid01/MUSIK #optional
     ports:
       - 4040:4040
     restart: unless-stopped
@@ -127,6 +93,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-v /playlists` | Location for playlists to be saved to. |
 | `-v /podcasts` | Location of podcasts. |
 | `-v /media` | Location of other media. |
+| `-v /srv/dev-disk-by-label-SWRaid01/MUSIK` | Location old MUSIK from former installation to reuse the database |
 
 ## User / Group Identifiers
 
@@ -160,7 +127,7 @@ Extra java options can be passed with the JAVA_OPTS environment variable, eg `-e
 * container version number
   * `docker inspect -f '{{ index .Config.Labels "build_version" }}' airsonic`
 * image version number
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/airsonic`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' marduer/airsonic`
 
 ## Updating Info
 
@@ -169,7 +136,7 @@ Most of our images are static, versioned, and require an image update and contai
 Below are the instructions for updating containers:
 
 ### Via Docker Run/Create
-* Update the image: `docker pull linuxserver/airsonic`
+* Update the image: `docker pull marduer/airsonic`
 * Stop the running container: `docker stop airsonic`
 * Delete the container: `docker rm airsonic`
 * Recreate a new container with the same docker create parameters as instructed above (if mapped correctly to a host folder, your `/config` folder and settings will be preserved)
@@ -200,12 +167,12 @@ Below are the instructions for updating containers:
 
 If you want to make local modifications to these images for development purposes or just to customize the logic:
 ```
-git clone https://github.com/linuxserver/docker-airsonic.git
+git clone https://github.com/marduer/docker-airsonic.git
 cd docker-airsonic
 docker build \
   --no-cache \
   --pull \
-  -t linuxserver/airsonic:latest .
+  -t marduer/airsonic:latest .
 ```
 
 The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
@@ -217,10 +184,4 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **24.03.19:** - Switching to new Base images, shift to arm32v7 tag.
-* **26.01.19:** - Add pipeline logic and multi arch.
-* **05.01.19:** - Linting fixes.
-* **27.08.18:** - Use new inhouse java baseimage for quicker builds.
-* **23.08.18:** - Rebase to ubuntu bionic for increased performance across all arch's.
-* **22.04.18:** - Add the forgotten JAVA_OPTS to the run command.
-* **29.12.17:** - Initial Release.
+* **11.11.2019:** - Initial Development Release.

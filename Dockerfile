@@ -43,9 +43,11 @@ RUN \
 	/var/lib/apt/lists/* \
 	/var/tmp/*
 
+RUN mkdir -p /srv/dev-disk-by-label-SWRaid01/MUSIK
+
 # add local files
 COPY root/ /
 
 # ports and volumes
 EXPOSE 4040
-VOLUME /config /media /music /playlists /podcasts
+VOLUME /config /media /music /playlists /podcasts /srv/dev-disk-by-label-SWRaid01/MUSIK
